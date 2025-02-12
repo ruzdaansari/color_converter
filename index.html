@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Color Generator</h1>
+    <div class="wrapper">
+      <div class="gradient-box"></div>
+      <div class="row">
+        <div class="gradientTypes">
+            <p>Gradient Types</p>
+            <select>
+                <option value="Linear-gradient" selected>Linear Gradient</option>
+                <option value="Radial-gradient">Radial Gradient</option>
+            </select>
+        </div>
+        <div class="dropdownContainer">
+          <p>Direction</p>
+          <div class="select-box">
+            <select>
+              <option value="top">Top</option>
+              <option value="right top">Right top</option>
+              <option value="right">right</option>
+              <option value="right bottom">right bottom</option>
+              <option value="bottom">bottom</option>
+              <option value="left bottom">left bottom</option>
+              <option value="left">left</option>
+              <option value="left top" selected>left top</option>
+            </select>
+          </div>
+        </div>
+        <div class="percenBox hide">
+            <p>Select %</p>
+            <div class="inputField">
+            <input type="number"/>
+            <input type="number"/>
+        </div>
+        </div>
+        <div class="colorPallete">
+          <p>Colors</p>
+          <div class="colors-column">
+            <input type="color" value="#5665E9" />
+            <input type="color" value="#A271F8" />
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="showLinearGradient">background: linear-gradient(to left top, #977DFE,  #6878FF);</div> -->
+      <textarea class="showLinearGradient">background: linear-gradient(to left top, #977DFE,  #6878FF);</textarea>
+
+      <div class="row buttons">
+        <button class="refresh">Refresh Color</button>
+        <button class="copy">Copy Code</button>
+
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

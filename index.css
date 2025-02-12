@@ -1,0 +1,92 @@
+/* body{
+    background-color: blueviolet;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper {
+  width: 450px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+  border: 2px solid;
+}
+.wrapper .gradient-box {
+  height: 150px;
+  width: 100%;
+  border-radius: 7px;
+  background: linear-gradient(to left top, #5665e9, #a271f8);
+}
+.row {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.options p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+/* .colors-column input {
+    height: 41px;
+    width: calc(100% / 2 - 20px);
+  }
+
+  .colors-column input:last-child {
+    margin-left: 6px;
+  } */
+.wrapper textarea {
+  width: 90%;
+  color: #333;
+  font-size: 1.05rem;
+  resize: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.buttons button {
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin: 0 0 -15px;
+    font-size: 1.09rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 130px;
+  }
+  .buttons .refresh {
+    background: #6C757D;
+  }
+  .buttons .refresh:hover {
+    background: #5f666d;
+  }
+  .buttons .copy {
+    background: #8A6CFF;
+  }
+  .buttons .copy:hover {
+    background: #704dff;
+  }
+  .percenBox {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+}
+
+  .hide{
+    display: none;
+  }
+
+  .show{
+    opacity: 1;
+    display: block;
+  }
